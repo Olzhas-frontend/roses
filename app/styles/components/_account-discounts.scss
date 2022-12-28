@@ -1,0 +1,83 @@
+.account-discounts {
+	&__item {
+		&:last-child {
+			padding-top: 5rem;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 1rem;
+
+		color: var(--secondary-color);
+		font-weight: 500;
+		font-size: 1.8rem;
+		line-height: 26px;
+	}
+
+	&__descr {
+		color: var(--secondary-color);
+		line-height: 22px;
+	}
+
+	&__link {
+		color: var(--color-blue);
+		font-weight: 500;
+
+		@include hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__table {
+		width: 100%;
+		max-width: 360px;
+		margin: 4rem auto;
+
+		border: 1px solid #d0d2d7;
+		border-radius: 5px;
+
+		border-collapse: collapse;
+	}
+}
+
+.table-discounts {
+	&__header {
+		border-bottom: 1px solid #e2e4eb;
+	}
+
+	&__title {
+		padding: 1.5rem 2.9rem;
+
+		color: var(--davy-gray);
+		font-weight: 500;
+		line-height: 22px;
+
+		&:last-child {
+			color: var(--color-red);
+
+			border-left: 1px solid #d0d2d7;
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			border-bottom: 1px solid #e2e4eb;
+		}
+	}
+
+	&__cell {
+		padding: 1.5rem 3rem;
+
+		color: var(--primary-color);
+		font-weight: 500;
+		line-height: 22px;
+
+		&:nth-child(even) {
+			text-align: center;
+
+			background-color: #f2f6f7;
+			border-left: 1px solid #d0d2d7;
+		}
+	}
+}

@@ -1,0 +1,97 @@
+.payment {
+	.info__content-descr {
+		margin-bottom: 2rem;
+	}
+
+	&__wrapper {
+		grid-template-columns: 25rem 81rem;
+	}
+
+	&__way {
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+
+		&-icon {
+			width: 48px;
+			height: 48px;
+			margin-right: 2rem;
+		}
+
+		&-caption {
+			color: var(--secondary-color);
+			font-weight: 500;
+			line-height: 22px;
+		}
+	}
+
+	&__header {
+		margin-bottom: 4rem;
+	}
+
+	&__note {
+		display: flex;
+
+		&-icon {
+			flex-shrink: 0;
+			width: 20px;
+			height: 20px;
+			margin-right: 1.5rem;
+
+			fill: none;
+			stroke: var(--color-red);
+			stroke-width: 1.5;
+		}
+	}
+
+	&__system {
+		padding: 4rem 0 3rem;
+
+		&-descr {
+			margin-bottom: 3rem;
+
+			color: #222a46;
+			font-size: 1.8rem;
+			line-height: 26px;
+		}
+
+		&-inner {
+			display: grid;
+			grid-template-columns: 37rem 37rem;
+			gap: 2rem;
+		}
+
+		&-box {
+			padding: 3.5rem 5rem;
+
+			text-align: center;
+
+			background-color: var(--color-white);
+			border: 1px solid #d0d2d7;
+			border-radius: 10px;
+		}
+
+		&-cards {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 1rem;
+		}
+
+		&-item {
+			&:not(:last-child) {
+				margin-right: 2rem;
+			}
+		}
+
+		&-title {
+			margin: 0;
+
+			color: var(--secondary-color);
+			font-weight: 700;
+			line-height: 22px;
+		}
+	}
+}

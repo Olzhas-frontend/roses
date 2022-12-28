@@ -1,0 +1,75 @@
+.modal-product {
+	display: flex;
+	padding: 2rem 0;
+
+	border-bottom: 1px solid #e2e4eb;
+
+	&__img {
+		width: 80px;
+		height: 80px;
+		margin-right: 1.5rem;
+
+		border-radius: 5px;
+	}
+
+	&__info {
+		margin-right: auto;
+	}
+
+	&__title {
+		max-width: 240px;
+		margin: 0;
+		margin-bottom: 0.5rem;
+
+		color: var(--secondary-color);
+		font-weight: 500;
+		font-size: 1.6rem;
+		line-height: 22px;
+	}
+
+	&__id {
+		display: block;
+		margin-bottom: 1.5rem;
+
+		color: var(--davy-gray);
+		font-size: 1.4rem;
+		line-height: 20px;
+	}
+
+	&__btn {
+		display: inline-flex;
+		flex-shrink: 0;
+		align-items: center;
+		align-self: flex-start;
+		justify-content: center;
+		width: 24px;
+		height: 24px;
+
+		border: 2px solid #e2e4eb;
+		border-radius: 50%;
+
+		svg {
+			width: 12px;
+			height: 12px;
+
+			pointer-events: none;
+
+			fill: #e2e4eb;
+		}
+	}
+
+	&__count {
+		display: flex;
+		align-items: center;
+	}
+
+	&__stepper {
+		margin-right: 2.4rem;
+	}
+
+	&__price {
+		font-weight: 500;
+		font-size: 1.8rem;
+		line-height: 26px;
+	}
+}

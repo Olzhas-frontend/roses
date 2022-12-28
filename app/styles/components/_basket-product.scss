@@ -1,0 +1,102 @@
+.basket-product {
+	&__img {
+		display: block;
+		width: 80px;
+		height: 80px;
+		margin-right: 2rem;
+
+		border-radius: 10px;
+	}
+
+	&__info {
+		width: 100%;
+		max-width: 380px;
+		margin-right: 5rem;
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 0.5rem;
+
+		color: var(--secondary-color);
+		font-weight: 500;
+		font-size: 1.6rem;
+		line-height: 22px;
+	}
+
+	&__link {
+		transition: color 0.3s ease-in-out;
+
+		@include hover {
+			color: var(--color-blue);
+		}
+	}
+
+	&__id {
+		color: var(--davy-gray);
+		font-size: 1.4rem;
+		line-height: 20px;
+	}
+
+	&__stepper {
+		justify-content: space-between;
+		width: 108px;
+		margin-right: 4rem;
+		padding: 0.4rem 1.2rem;
+
+		background: var(--color-white);
+		border: 1px solid #d0d2d7;
+		border-radius: 4px;
+
+		.stepper__field {
+			margin: 0;
+		}
+
+		.stepper__btn {
+			width: 24px;
+			height: 22px;
+
+			border: none;
+		}
+	}
+
+	&__price {
+		margin-right: auto;
+
+		font-weight: 500;
+		font-size: 1.8rem;
+		line-height: 26px;
+	}
+
+	&__delete-btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 24px;
+		height: 24px;
+
+		border: 2px solid #e2e4eb;
+		border-radius: 50%;
+
+		transition: 0.3s ease-in-out;
+
+		@include hover {
+			border-color: var(--color-red);
+
+			svg {
+				fill: var(--color-red);
+			}
+		}
+
+		svg {
+			width: 16px;
+			height: 16px;
+
+			transition: 0.3s ease-in-out;
+
+			pointer-events: none;
+
+			fill: #e2e4eb;
+		}
+	}
+}

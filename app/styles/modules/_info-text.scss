@@ -1,0 +1,52 @@
+.info-text {
+	position: relative;
+	z-index: 2;
+
+	padding: 7rem 0;
+
+	background-color: #f2f6f6;
+
+	&__title {
+		margin: 0;
+		margin-bottom: 3rem;
+
+		color: var(--secondary-color);
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 50px;
+		text-align: center;
+	}
+
+	&__box {
+		padding: 5rem 10rem;
+
+		background-color: #fff;
+
+		border-radius: 10px;
+		box-shadow: 0 4px 15px rgba(34, 42, 70, 0.15);
+	}
+
+	&__descr {
+		color: var(--bright-grey);
+		font-size: 1.8rem;
+		line-height: 26px;
+
+		&:not(:last-child) {
+			margin-bottom: 2.5rem;
+		}
+	}
+
+	&__decor {
+		position: absolute;
+		top: 0;
+		z-index: -1;
+
+		&--left {
+			left: 0;
+		}
+
+		&--right {
+			right: 0;
+		}
+	}
+}

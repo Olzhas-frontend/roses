@@ -1,0 +1,271 @@
+html {
+	box-sizing: border-box;
+
+	font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.page {
+	height: 100%;
+
+	font-family: var(--font-family, sans-serif);
+
+	-webkit-text-size-adjust: 100%;
+}
+
+.page__body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+	color: var(--primary-color);
+	font-weight: var(--fw-base);
+	font-size: var(--fz-base);
+	font-family: var(--ff-primary);
+	font-style: var(--fs-base);
+	line-height: var(--lh-base);
+}
+
+p {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+a {
+	color: inherit;
+
+	text-decoration: none;
+}
+
+.is-hidden {
+	display: none;
+}
+
+.btn-reset {
+	padding: 0;
+
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.list-reset {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.input-reset {
+	background-color: var(--color-white);
+	border: none;
+	border-radius: 0;
+
+	-webkit-appearance: none;
+
+	appearance: none;
+
+	&::-webkit-search-decoration,
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-results-button,
+	&::-webkit-search-results-decoration {
+		display: none;
+	}
+}
+
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+
+	border: 0;
+
+	clip: rect(0 0 0 0);
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: none;
+}
+
+.centered {
+	text-align: center;
+}
+
+.dis-scroll {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+
+	overscroll-behavior: none;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: var(--grid-gap);
+}
+
+.swiper-button-reset {
+	opacity: 1;
+
+	&::after {
+		display: none;
+	}
+}
+
+.prev-slide-btn,
+.next-slide-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 40px;
+	height: 40px;
+
+	background-color: var(--color-white);
+
+	border-radius: 40px;
+	box-shadow: 0 4px 15px rgba(34, 42, 70, 0.15);
+
+	svg {
+		width: 14px;
+		height: 14px;
+	}
+}
+
+.section {
+	&__header {
+		&.gutter-lg {
+			margin-bottom: 3rem;
+		}
+
+		&.gutter-md {
+			margin-bottom: 2rem;
+		}
+
+		&.gutter-sm {
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+.section-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__title {
+		margin: 0;
+
+		color: var(--secondary-color);
+		font-size: 4rem;
+		font-family: 'Yeseva One', sans-serif;
+		line-height: 50px;
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+
+		font-weight: 500;
+
+		transition: color 0.3s ease-in-out;
+
+		@include hover {
+			color: var(--color-blue);
+
+			svg {
+				fill: var(--color-blue);
+			}
+		}
+
+		svg {
+			width: 24px;
+			height: 24px;
+			margin-left: 1rem;
+
+			transition: fill 0.3s ease-in-out;
+
+			fill: var(--bright-grey);
+		}
+	}
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: var(--primary-color);
+	visibility: hidden;
+	opacity: 0;
+
+	transition: 0.3s ease-in-out;
+
+	&.active {
+		visibility: visible;
+		opacity: 0.5;
+	}
+}
+
+.icon {
+	fill: none;
+
+	&--gray {
+		stroke: var(--steel-gray);
+	}
+
+	&--bright-grey {
+		stroke: var(--bright-grey);
+	}
+
+	&--davy-grey {
+		stroke: var(--davy-gray);
+	}
+
+	&.stroke-2 {
+		stroke-width: 1.5;
+	}
+}
+
+.title--md {
+	font-size: 3rem;
+}
+
+.custom-checkbox {
+	&--fill {
+		.custom-checkbox__content::after {
+			background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='fi_32282' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='405.272px' height='405.272px' viewBox='0 0 405.272 405.272' style='enable-background:new 0 0 405.272 405.272;' fill='%23fff' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836 c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064 c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+		}
+
+		.custom-checkbox__field {
+			&:checked {
+				+ .custom-checkbox__content::before {
+					background: var(--color-blue);
+					border-color: transparent;
+				}
+			}
+		}
+	}
+}

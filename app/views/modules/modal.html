@@ -1,0 +1,281 @@
+<div class="graph-modal main-modal">
+	<div class="graph-modal__container main-modal__container" role="dialog" aria-modal="true"
+		data-graph-target="add-address">
+		<button class="main-modal__close graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+		<div class="graph-modal__content">
+			<form class="form">
+				<div class="form__header">
+					<h4 class="form__title">Добавить адрес</h4>
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="name">ФИО</label>
+					<input class="form__control" id="name" name="name" type="text">
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="phone">Телефон</label>
+					<input class="form__control" id="phone" name="phone" type="tel">
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="address">Адрес</label>
+					<input class="form__control" id="address" name="address" type="text">
+				</div>
+				<div class="form__group">
+					<button class="form__btn btn-reset">Добавить адрес</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="graph-modal__container main-modal__container" role="dialog" aria-modal="true"
+		data-graph-target="add-mention">
+		<button class="main-modal__close graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+		<div class="graph-modal__content">
+			<form class="form">
+				<div class="form__header">
+					<h4 class="form__title">Добавить напоминание</h4>
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="mention-name">ФИО</label>
+					<input class="form__control" id="mention-name" name="mention-name" type="text">
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="mention-reason">Повод</label>
+					<input class="form__control" id="mention-reason" name="mention-reason" type="text">
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="mention-date">Дата напоминания</label>
+					<input class="form__control" id="mention-date" name="mention-date" type="date">
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="mention-event">Дата события</label>
+					<input class="form__control" id="mention-event" name="mention-event" type="date">
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="mention-message">Сообщение</label>
+					<textarea placeholder="Введите комментарий" class="form__control form__textarea" id="mention-message"
+						name="mention-message"></textarea>
+				</div>
+				<div class="form__group">
+					<button class="form__btn btn-reset">Добавить напоминание</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="graph-modal__container main-modal__container" role="dialog" aria-modal="true"
+		data-graph-target="add-review">
+		<button class="main-modal__close graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+		<div class="graph-modal__content">
+			<form class="form">
+				<div class="form__header">
+					<h4 class="form__title">Добавить отзыв</h4>
+				</div>
+				<div class="form__group">
+					<span class="form__caption">Ваш отзыв</span>
+					<div class="form__rating">
+						<ul class="form__rating-list list-reset">
+							<li class="form__rating-item">
+								<svg class="form__rating-icon">
+									<use xlink:href="images/sprites/sprite-mono.svg#star"></use>
+								</svg>
+							</li>
+							<li class="form__rating-item">
+								<svg class="form__rating-icon">
+									<use xlink:href="images/sprites/sprite-mono.svg#star"></use>
+								</svg>
+							</li>
+							<li class="form__rating-item">
+								<svg class="form__rating-icon">
+									<use xlink:href="images/sprites/sprite-mono.svg#star"></use>
+								</svg>
+							</li>
+							<li class="form__rating-item">
+								<svg class="form__rating-icon">
+									<use xlink:href="images/sprites/sprite-mono.svg#star"></use>
+								</svg>
+							</li>
+							<li class="form__rating-item">
+								<svg class="form__rating-icon">
+									<use xlink:href="images/sprites/sprite-mono.svg#star"></use>
+								</svg>
+							</li>
+						</ul>
+						<span class="form__rating-count">0</span>
+					</div>
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="review-message">Сообщение</label>
+					<textarea placeholder="Введите комментарий" class="form__control form__textarea" id="review-message"
+						name="review-message"></textarea>
+				</div>
+				<div class="form__group">
+					<button class="form__btn btn-reset">Добавить отзыв</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="graph-modal__container auth" role="dialog" aria-modal="true" data-graph-target="sign-in">
+		<button class="main-modal__close graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+		<div class="graph-modal__content">
+			<div class="auth__wrapper">
+				<ul class="auth__controls tabs-control list-reset">
+					<li class="auth__controls-item tabs-control__item " data-path-tab="sign-up">
+						Регистрация
+					</li>
+					<li class="auth__controls-item tabs-control__item is-active" data-path-tab="sign-in">
+						Вход
+					</li>
+				</ul>
+				<div class="auth__tabs tabs-content">
+					<div class="auth__tabs-item tabs-content__item tabs-content__item--active auth__tabs--sign-in"
+						data-target-tab="sign-in">
+						<h4 class="auth__title">Войти</h4>
+						<form class="form" id="sing-in-form" action="#">
+							<div class="form__group">
+								<label class="form__label" for="sigin-in-phone">Номер телефона</label>
+								<input placeholder="+7" class="form__control" id="sigin-in-phone" name="sigin-in-phone"
+									type="tel">
+								<p class="form__descr">Напишите свой мобильный телефон в международном формате (+7...). Вам
+									придет
+									смс с кодом для входа</p>
+							</div>
+							<div class="form__group">
+								<button class="btn-reset form__btn" id="recieve-code-btn">Получить код</button>
+							</div>
+						</form>
+					</div>
+					<div class="auth__tabs-item tabs-content__item auth__tabs--sign-up" data-target-tab="sign-up">
+						<h4 class="auth__title">Регистрация</h4>
+						<form class="form" id="sing-up-form" action="#">
+							<div class="form__group">
+								<label class="form__label" for="sing-up-name">ФИО</label>
+								<input class="form__control" id="sing-up-name" name="sing-up-name" type="text">
+							</div>
+							<div class="form__group">
+								<label class="form__label" for="sigin-up-phone">Номер телефона</label>
+								<input placeholder="+7" class="form__control" id="sigin-up-phone" name="sigin-up-phone"
+									type="tel">
+							</div>
+							<div class="form__group">
+								<button class="btn-reset form__btn">Зарегистрироваться</button>
+							</div>
+							<p class="form__descr centered">Нажимая кнопку "Зарегистрироваться" вы соглашаетесь с условиями <a
+									href="#" class="form__link">обработки персональных данных</a> и <a class="form__link"
+									href="#">публичной
+									офертой</a>.</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="graph-modal__container auth" role="dialog" aria-modal="true" data-graph-target="confirm-phone">
+		<button class="main-modal__close graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+		<div class="graph-modal__content">
+			<form class="form" action="#">
+				<h4 class="auth__title text-left">Подтвердите ваш номер</h4>
+				<p class="auth__code">Код выслан на номер: <span></span></p>
+				<div class="auth__inputs">
+					<input class="auth__field" maxlength="1" type="text">
+					<input class="auth__field" maxlength="1" type="text">
+					<input class="auth__field" maxlength="1" type="text">
+					<input class="auth__field" maxlength="1" type="text">
+				</div>
+				<button class="auth__change-btn btn-reset">Изменить номер телефона</button>
+				<button class="btn-reset form__btn">Подтвердить телефон</button>
+				<button class="auth__send-code btn-reset">Отправить код повторно через 59 сек.</button>
+			</form>
+		</div>
+	</div>
+	<div class="graph-modal__container order-info" role="dialog" aria-modal="true">
+		<button class="main-modal__close graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+		<div class="graph-modal__content">
+			<div class="order-info__content">
+				<h4 class="order-info__number">Заказ № 245103</h4>
+				<ul class="order-info__list list-reset">
+					<li class="order-info__item">
+						<span class="order-info__caption">Способ получения:</span>
+						<span class="order-info__value">Самовывоз</span>
+					</li>
+					<li class="order-info__item">
+						<span class="order-info__caption">Адрес:</span>
+						<span class="order-info__value">Воронеж, ул. Пионерская, 16 магазин-склад</span>
+					</li>
+					<li class="order-info__item">
+						<span class="order-info__caption">Дата и время:</span>
+						<span class="order-info__value">23.03.2022</span>
+					</li>
+					<li class="order-info__item">
+						<span class="order-info__caption">Получатель:</span>
+						<span class="order-info__value">Зиновьев Сергей</span>
+					</li>
+					<li class="order-info__item">
+						<span class=""> Текст открытки:</span>
+						<span class="order-info__value">Для дорогой мамы</span>
+					</li>
+					<li class="order-info__item">
+						<span class="order-info__caption"> Комментарий:</span>
+						<span class="order-info__value">Здравствуйте. Заказал букет роз для мамы.
+							Когда можно забрать?</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="graph-modal__container buy" role="dialog" aria-modal="true" data-graph-target="buy-one-click">
+		<button class="main-modal__close graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+		<div class="graph-modal__content">
+			<form class="form" action="#">
+				<div class="form__header">
+					<h4 class="form__title">Быстрый заказ</h4>
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="fast-order-phone">Телефон</label>
+					<input placeholder="+7" class="form__control" id="fast-order-phone" name="fast-order-phone" type="tel">
+				</div>
+				<div class="form__group">
+					<button class="btn-reset form__btn">Купить в 1 клик</button>
+				</div>
+				<div class="buy__footer">
+					<span class="buy__footer-caption">Или свяжитесь с нами сами</span>
+					<ul class="buy__social list-reset">
+						<li class="buy__social-item">
+							<a class="buy__social-link" href="#">
+								<svg class="buy__social-icon icon icon--gray stroke-2">
+									<use xlink:href="images/sprites/sprite-mono.svg#call"></use>
+								</svg>
+								+7 (920) 211-49-03
+							</a>
+						</li>
+						<li class="buy__social-item">
+							<a class="buy__social-link" href="#">
+								<svg class="buy__social-icon">
+									<use xlink:href="images/sprites/sprite-multi.svg#whatsapp"></use>
+								</svg>
+								+7 (920) 211-49-03
+							</a>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="graph-modal__container main-modal__container" role="dialog" aria-modal="true"
+		data-graph-target="address-book">
+		<button class="main-modal__close graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+		<div class="graph-modal__content">
+			<form class="form address-book">
+				<div class="form__header">
+					<h4 class="form__title">Адресная книга</h4>
+				</div>
+				<ul class="address-book__list list-reset"></ul>
+				<div class="form__group">
+					<button class="address-book__btn btn-reset">
+						<svg class="">
+							<use xlink:href="images/sprites/sprite-mono.svg#plus-circle"></use>
+						</svg>
+						Добавить адрес
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

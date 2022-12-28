@@ -1,0 +1,24 @@
+.gallery {
+	padding: 6rem 0;
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__slider {
+		width: 100%;
+		overflow: hidden;
+
+		.swiper-button-prev {
+			left: -20px;
+		}
+
+		.swiper-button-next {
+			right: -20px;
+		}
+
+		&-img {
+			border-radius: 5px;
+		}
+	}
+}

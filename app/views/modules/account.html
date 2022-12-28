@@ -1,0 +1,378 @@
+<section class="account">
+	<div class="container">
+		<div class="account__wrapper">
+			<div class="account__nav">
+				<span class="account__name">Здравствуйте, Алексей!</span>
+				<div class="account__discount">
+					<p class="account__discount-count">Ваша скидка <span>5%</span></p>
+					<p class="account__discount-decsr">Цены на сайте отображаются с учётом вашей скидки</p>
+				</div>
+				<ul class="account__control tabs-control list-reset">
+					<li class="account__control-item tabs-control__item is-active" data-path-tab="account-main">
+						<svg class="account__control-icon icon icon--gray">
+							<use xlink:href="images/sprites/sprite-mono.svg#user"></use>
+						</svg>
+						Личный кабинет
+					</li>
+					<li class="account__control-item tabs-control__item" data-path-tab="account-address">
+						<svg class="account__control-icon icon icon--gray">
+							<use xlink:href="images/sprites/sprite-mono.svg#map-pin-2"></use>
+						</svg>
+						Адресы
+					</li>
+					<li class="account__control-item tabs-control__item" data-path-tab="account-orders">
+						<svg class="account__control-icon icon icon--gray">
+							<use xlink:href="images/sprites/sprite-mono.svg#orders"></use>
+						</svg>
+						Заказы
+					</li>
+					<li class="account__control-item tabs-control__item" data-path-tab="account-settings">
+						<svg class="account__control-icon icon icon--gray stroke-2">
+							<use xlink:href="images/sprites/sprite-mono.svg#setting"></use>
+						</svg>
+						Настройки
+					</li>
+					<li class="account__control-item tabs-control__item" data-path-tab="account-mentions">
+						<svg class="account__control-icon icon icon--gray">
+							<use xlink:href="images/sprites/sprite-mono.svg#mention"></use>
+						</svg>
+						Напоминания
+					</li>
+					<li class="account__control-item tabs-control__item" data-path-tab="account-discounts">
+						<svg class="account__control-icon icon icon--gray">
+							<use xlink:href="images/sprites/sprite-mono.svg#discount"></use>
+						</svg>
+						О скидках
+					</li>
+					<a class="account__control-link log-out" href="#">
+						<svg class="account__control-icon icon icon--gray">
+							<use xlink:href="images/sprites/sprite-mono.svg#logout"></use>
+						</svg>
+						Выйти
+					</a>
+				</ul>
+			</div>
+			<div class="account__content">
+				<div class="account__content-tabs tabs-content">
+					<div class="tabs-content__item tabs-content__item--active" data-target-tab="account-main">
+						<h3 class="tabs-content__title">Личный кабинет</h3>
+						<table class="tabs-content__table account-table">
+							<tr class="account-table__header">
+								<th class="account-table__title">Номер заказа</th>
+								<th class="account-table__title">Название</th>
+								<th class="account-table__title">Дата доставки</th>
+								<th class="account-table__title">Получатель</th>
+								<th class="account-table__title">Статус</th>
+								<th class="account-table__title">Сумма</th>
+								<th class="account-table__title"></th>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell order-number">64587930</td>
+								<td class="account-table__cell">Букет малиновых роз</td>
+								<td class="account-table__cell">23.05.2021</td>
+								<td class="account-table__cell">Зиновьев Сергей</td>
+								<td class="account-table__cell status status--wait">Ожидает оплаты</td>
+								<td class="account-table__cell order-price">5 739 ₽</td>
+								<td class="account-table__cell"><button class="account-table__btn btn-reset"
+										data-graph-path="add-review">Добавить
+										отзыв</button></td>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell order-number">64587930</td>
+								<td class="account-table__cell">Букет малиновых роз</td>
+								<td class="account-table__cell">23.05.2021</td>
+								<td class="account-table__cell">Зиновьев Сергей</td>
+								<td class="account-table__cell status status--canceled">Отменен</td>
+								<td class="account-table__cell order-price">5 739 ₽</td>
+								<td class="account-table__cell"><button class="account-table__btn btn-reset">Добавить
+										отзыв</button></td>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell order-number">64587930</td>
+								<td class="account-table__cell">Букет малиновых роз</td>
+								<td class="account-table__cell">23.05.2021</td>
+								<td class="account-table__cell">Зиновьев Сергей</td>
+								<td class="account-table__cell status status--success">Оплачено</td>
+								<td class="account-table__cell order-price">5 739 ₽</td>
+								<td class="account-table__cell"><button class="account-table__btn btn-reset">Добавить
+										отзыв</button></td>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell order-number">64587930</td>
+								<td class="account-table__cell">Букет малиновых роз</td>
+								<td class="account-table__cell">23.05.2021</td>
+								<td class="account-table__cell">Зиновьев Сергей</td>
+								<td class="account-table__cell status status--success">Оплачено</td>
+								<td class="account-table__cell order-price">5 739 ₽</td>
+								<td class="account-table__cell"><button class="account-table__btn btn-reset">Добавить
+										отзыв</button></td>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell order-number">64587930</td>
+								<td class="account-table__cell">Букет малиновых роз</td>
+								<td class="account-table__cell">23.05.2021</td>
+								<td class="account-table__cell">Зиновьев Сергей</td>
+								<td class="account-table__cell status status--success">Оплачено</td>
+								<td class="account-table__cell order-price">5 739 ₽</td>
+								<td class="account-table__cell"><button class="account-table__btn btn-reset">Добавить
+										отзыв</button></td>
+							</tr>
+						</table>
+					</div>
+					<div class="tabs-content__item" data-target-tab="account-address">
+						<h3 class="tabs-content__title">Адресы</h3>
+						<table class="tabs-content__table account-table">
+							<tr class="account-table__header">
+								<th class="account-table__title">Адрес</th>
+								<th class="account-table__title">ФИО получателя</th>
+								<th class="account-table__title">Телефон</th>
+								<th></th>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell">г Санкт-Петербург, г Колпино 45890</td>
+								<td class="account-table__cell">Зиновьев Сергей</td>
+								<td class="account-table__cell">+7 (987) 490-90-89</td>
+								<td class="account-table__cell">
+									<button class="account-table__actions-btn edit-addres btn-reset">
+										<svg class="account-table__icon icon icon--davy-grey">
+											<use xlink:href="images/sprites/sprite-mono.svg#pen"></use>
+										</svg>
+									</button>
+									<button class="account-table__actions-btn delete-address btn-reset">
+										<svg class="account-table__icon icon icon--davy-grey">
+											<use xlink:href="images/sprites/sprite-mono.svg#trash-can"></use>
+										</svg>
+									</button>
+								</td>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell">г Санкт-Петербург, ул. Ленинградская, 189</td>
+								<td class="account-table__cell">Зиновьев Сергей</td>
+								<td class="account-table__cell">+7 (987) 490-90-89</td>
+								<td class="account-table__cell">
+									<button class="account-table__actions-btn edit-addres btn-reset">
+										<svg class="account-table__icon icon icon--davy-grey">
+											<use xlink:href="images/sprites/sprite-mono.svg#pen"></use>
+										</svg>
+									</button>
+									<button class="account-table__actions-btn delete-address btn-reset">
+										<svg class="account-table__icon icon icon--davy-grey">
+											<use xlink:href="images/sprites/sprite-mono.svg#trash-can"></use>
+										</svg>
+									</button>
+								</td>
+							</tr>
+						</table>
+						<button class="tabs-content__btn btn-reset" data-graph-path="add-address">
+							<svg>
+								<use xlink:href="images/sprites/sprite-mono.svg#circle"></use>
+							</svg>
+							Добавить
+						</button>
+					</div>
+					<div class="tabs-content__item" data-target-tab="account-orders">
+						<h3 class="tabs-content__title">Заказы</h3>
+						<table class="tabs-content__table account-table">
+							<tr class="account-table__header">
+								<th class="account-table__title">Номер заказа</th>
+								<th class="account-table__title">Название</th>
+								<th class="account-table__title">Дата доставки</th>
+								<th class="account-table__title">Получатель</th>
+								<th class="account-table__title">Статус</th>
+								<th class="account-table__title">Сумма</th>
+								<th class="account-table__title"></th>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell order-number">64587930</td>
+								<td class="account-table__cell">Букет малиновых роз</td>
+								<td class="account-table__cell">23.05.2021</td>
+								<td class="account-table__cell">Зиновьев Сергей</td>
+								<td class="account-table__cell status status--wait">Ожидает оплаты</td>
+								<td class="account-table__cell order-price">5 739 ₽</td>
+								<td class="account-table__cell"><button class="account-table__btn btn-reset">Добавить
+										отзыв</button></td>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell order-number">64587930</td>
+								<td class="account-table__cell">Букет малиновых роз</td>
+								<td class="account-table__cell">23.05.2021</td>
+								<td class="account-table__cell">Зиновьев Сергей</td>
+								<td class="account-table__cell status status--canceled">Отменен</td>
+								<td class="account-table__cell order-price">5 739 ₽</td>
+								<td class="account-table__cell"><button class="account-table__btn btn-reset">Добавить
+										отзыв</button></td>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell order-number">64587930</td>
+								<td class="account-table__cell">Букет малиновых роз</td>
+								<td class="account-table__cell">23.05.2021</td>
+								<td class="account-table__cell">Зиновьев Сергей</td>
+								<td class="account-table__cell status status--success">Оплачено</td>
+								<td class="account-table__cell order-price">5 739 ₽</td>
+								<td class="account-table__cell"><button class="account-table__btn btn-reset">Добавить
+										отзыв</button></td>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell order-number">64587930</td>
+								<td class="account-table__cell">Букет малиновых роз</td>
+								<td class="account-table__cell">23.05.2021</td>
+								<td class="account-table__cell">Зиновьев Сергей</td>
+								<td class="account-table__cell status status--success">Оплачено</td>
+								<td class="account-table__cell order-price">5 739 ₽</td>
+								<td class="account-table__cell"><button class="account-table__btn btn-reset">Добавить
+										отзыв</button></td>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell order-number">64587930</td>
+								<td class="account-table__cell">Букет малиновых роз</td>
+								<td class="account-table__cell">23.05.2021</td>
+								<td class="account-table__cell">Зиновьев Сергей</td>
+								<td class="account-table__cell status status--success">Оплачено</td>
+								<td class="account-table__cell order-price">5 739 ₽</td>
+								<td class="account-table__cell"><button class="account-table__btn btn-reset">Добавить
+										отзыв</button></td>
+							</tr>
+						</table>
+					</div>
+					<div class="tabs-content__item" data-target-tab="account-settings">
+						<h3 class="tabs-content__title">Настройки</h3>
+						<div class="tabs-content__settings account-settings">
+							<form class="account-settings__form" action="#">
+								<div class="account-settings__group">
+									<h4 class="account-settings__title">Ваши данные</h4>
+									<p class="account-settings__descr">Ваши контактные данные будут использованы только для
+										обработки заказов и не будут передаваться третьим лицам</p>
+								</div>
+								<div class="account-settings__group">
+									<label class="account-settings__label" for="name">ФИО</label>
+									<input class="account-settings__input" id="name" type="text">
+								</div>
+								<div class="account-settings__group">
+									<label class="account-settings__label" for="phone">Телефон</label>
+									<input class="account-settings__input" id="phone" type="text">
+								</div>
+								<div class="account-settings__group">
+									<label class="account-settings__label" for="email">E-mail</label>
+									<input class="account-settings__input" id="email" type="email">
+								</div>
+								<div class="account-settings__group">
+									<label class="account-settings__label" for="location">Город, страна</label>
+									<input class="account-settings__input" id="location" type="text">
+								</div>
+								<div class="account-settings__group">
+									<label class="account-settings__label" for="birthday">Дата рождения</label>
+									<input class="account-settings__input" id="birthday" type="date">
+								</div>
+								<div class="account-settings__group">
+									<button class="account-settings__btn btn-reset">Сохранить данные</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="tabs-content__item" data-target-tab="account-mentions">
+						<h3 class="tabs-content__title">Напоминания</h3>
+						<table class="tabs-content__table account-table mention-table">
+							<tr class="account-table__header">
+								<th class="account-table__title">ФИО</th>
+								<th class="account-table__title">Повод</th>
+								<th class="account-table__title">Дата события</th>
+								<th class="account-table__title">Действия</th>
+							</tr>
+							<tr class="account-table__item">
+								<td class="account-table__cell">Зиновьев Евгений С.</td>
+								<td class="account-table__cell">Семейный праздник</td>
+								<td class="account-table__cell">23.05.2021</td>
+								<td class="account-table__cell">
+									<button class="account-table__actions-btn edit-addres btn-reset">
+										<svg class="account-table__icon icon icon--davy-grey">
+											<use xlink:href="images/sprites/sprite-mono.svg#pen"></use>
+										</svg>
+									</button>
+									<button class="account-table__actions-btn delete-address btn-reset">
+										<svg class="account-table__icon icon icon--davy-grey">
+											<use xlink:href="images/sprites/sprite-mono.svg#trash-can"></use>
+										</svg>
+									</button>
+								</td>
+							</tr>
+						</table>
+						<button class="tabs-content__btn btn-reset" data-graph-path="add-mention">
+							<svg>
+								<use xlink:href="images/sprites/sprite-mono.svg#circle"></use>
+							</svg>
+							Добавить
+						</button>
+					</div>
+					<div class="tabs-content__item" data-target-tab="account-discounts">
+						<h3 class="tabs-content__title">О скидках</h3>
+						<div class="tabs-content__discounts account-discounts">
+							<div class="account-discounts__item">
+								<h4 class="account-discounts__title">1. Накопительная система скидок для зарегистрированных
+									пользователей</h4>
+								<p class="account-discounts__descr">Наша шкала скидок основывается на общей сумме, потраченной
+									вами
+									на заказ цветов, и не распространяется на другие группы
+									товаров. Ваша скидка высчитывается автоматически, и вы всегда можете посмотреть её в Личном
+									Кабинете (в правом верхнем
+									углу сайта). Пожалуйста, помните: чтобы ваши заказы учитывались системой и влияли на скидку,
+									вы
+									должны размещать их как
+									зарегистрированный пользователь, предварительно введя свои логин и пароль. Скидка не
+									действует
+									на букеты с маркой
+									«Акция».</p>
+							</div>
+							<table class="account-discounts__table table-discounts">
+								<tr class="table-discounts__header">
+									<th class="table-discounts__title">Общая сумма заказов от</th>
+									<th class="table-discounts__title">Скидка</th>
+								</tr>
+								<tr class="table-discounts__item">
+									<td class="table-discounts__cell">$200</td>
+									<td class="table-discounts__cell">2%</td>
+								</tr>
+								<tr class="table-discounts__item">
+									<td class="table-discounts__cell">$300</td>
+									<td class="table-discounts__cell">3%</td>
+								</tr>
+								<tr class="table-discounts__item">
+									<td class="table-discounts__cell">$500</td>
+									<td class="table-discounts__cell">4%</td>
+								</tr>
+								<tr class="table-discounts__item">
+									<td class="table-discounts__cell">$700</td>
+									<td class="table-discounts__cell">5%</td>
+								</tr>
+								<tr class="table-discounts__item">
+									<td class="table-discounts__cell">$1000</td>
+									<td class="table-discounts__cell">6%</td>
+								</tr>
+								<tr class="table-discounts__item">
+									<td class="table-discounts__cell">$1000</td>
+									<td class="table-discounts__cell">7%</td>
+								</tr>
+							</table>
+							<div class="account-discounts__item">
+								<h4 class="account-discounts__title">2. Партнерские дисконтные программы</h4>
+								<p class="account-discounts__descr">Мы предоставляем скидки владельцам некоторых дисконтных,
+									клубных и пластиковых карт. Скидка не действует на букеты с
+									маркой «Акция». <a class="account-discounts__link" href="#">Подробнее</a></p>
+							</div>
+							<div class="account-discounts__item">
+								<h4 class="account-discounts__title">3. Купоны на скидку</h4>
+								<p class="account-discounts__descr">
+									Мы проводим различные акции, в ходе которых разыгрываются призы и купоны на скидку (от 3 до
+									25%). Информацию о
+									проводимых акциях и конкурсах можно найти на наших страницах ВКонтакте и Facebook (признан
+									властями РФ экстремистской
+									организацией). Скидки по нескольким купонам не суммируются. Скидка не действует на букеты с
+									маркой «Акция».
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

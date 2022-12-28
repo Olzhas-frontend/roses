@@ -1,0 +1,28 @@
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	padding-top: 2rem;
+
+	&__item {
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+
+		color: var(--primary-color);
+		font-weight: 500;
+
+		&--active {
+			color: var(--davy-gray);
+		}
+	}
+
+	&__icon {
+		width: 24px;
+		height: 24px;
+		margin: 0 0.5rem;
+
+		fill: var(--davy-gray);
+	}
+}

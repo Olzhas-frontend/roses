@@ -1,0 +1,9 @@
+.news {
+	padding: 6rem 0;
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(29rem, 37.7rem));
+		justify-content: space-between;
+	}
+}

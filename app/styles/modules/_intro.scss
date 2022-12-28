@@ -1,0 +1,160 @@
+.intro {
+	padding-top: 3rem;
+
+	&__wrapper {
+		display: flex;
+	}
+
+	&__slider {
+		max-width: 875px;
+		margin-right: 3rem;
+	}
+
+	&__product {
+		max-width: 280px;
+
+		&-caption {
+			display: block;
+			margin-bottom: 1rem;
+
+			color: var(--secondary-color);
+			font-weight: 700;
+			font-size: 1.8rem;
+			line-height: 26px;
+			text-align: center;
+		}
+
+		&-slider {
+			position: relative;
+
+			width: 100%;
+			overflow: hidden;
+		}
+	}
+}
+
+.main-slider {
+	position: relative;
+
+	width: 100%;
+	overflow: hidden;
+
+	&__item {
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		min-height: 440px;
+		padding-left: 10rem;
+
+		background: no-repeat center/cover;
+		border-radius: 10px;
+	}
+
+	&__title {
+		max-width: 305px;
+		margin: 0;
+		margin-bottom: 1rem;
+		overflow: hidden;
+
+		color: var(--secondary-color);
+		font-size: 4.4rem;
+		font-family: 'Yeseva One', sans-serif;
+		line-height: 56px;
+
+		border-radius: 10px;
+	}
+
+	&__code {
+		span {
+			display: inline-block;
+			margin-bottom: 1rem;
+
+			color: var(--secondary-color);
+			font-size: 1.8rem;
+			line-height: 26px;
+		}
+	}
+
+	.swiper-button-prev {
+		left: 20px;
+	}
+
+	.swiper-button-next {
+		right: 20px;
+	}
+
+	.swiper-pagination {
+		bottom: 30px;
+
+		&-bullet {
+			width: 40px;
+			height: 3px;
+
+			background-color: #fff;
+			border-radius: 0;
+			opacity: 0.5;
+
+			transition: opacity 0.3s ease;
+
+			&-active {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.promo-code {
+	position: relative;
+
+	width: 100%;
+	max-width: 205px;
+
+	box-shadow: 0 4px 15px rgba(34, 42, 70, 0.08);
+
+	&__input {
+		padding: 1.4rem 2.5rem;
+		padding-right: 0;
+
+		color: var(--color-red);
+		font-weight: 500;
+		line-height: 22px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+
+		background-color: var(--color-white);
+		border: none;
+		border-radius: 10px;
+
+		outline: none;
+
+		&::placeholder {
+			color: var(--color-red);
+		}
+	}
+
+	&__btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+
+		background: var(--color-blue);
+
+		border-radius: 0 10px 10px 0;
+
+		svg {
+			width: 24px;
+			height: 24px;
+
+			fill: #fff;
+		}
+	}
+}

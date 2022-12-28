@@ -1,0 +1,39 @@
+.buy {
+	width: 380px;
+
+	&__footer {
+		&-caption {
+			display: block;
+			margin-bottom: 2rem;
+
+			color: var(--davy-gray);
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 22px;
+			text-align: center;
+		}
+	}
+
+	&__social {
+		&-item {
+			&:not(:last-child) {
+				margin-bottom: 2rem;
+			}
+		}
+
+		&-link {
+			display: flex;
+			justify-content: center;
+
+			color: var(--secondary-color);
+			font-weight: 500;
+			line-height: 22px;
+		}
+
+		&-icon {
+			width: 24px;
+			height: 24px;
+			margin-right: 1rem;
+		}
+	}
+}

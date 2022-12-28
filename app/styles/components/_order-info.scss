@@ -1,0 +1,37 @@
+.order-info {
+	width: 560px;
+
+	&__content {
+		padding: 1rem;
+	}
+
+	&__number {
+		margin: 0;
+		margin-bottom: 2rem;
+
+		font-weight: 600;
+		font-size: 2rem;
+		line-height: 30px;
+	}
+
+	&__list {
+		max-width: 485px;
+	}
+
+	&__item {
+		display: grid;
+		grid-template-columns: 145px auto;
+		gap: 1rem;
+
+		color: var(--bright-grey);
+
+		&:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	&__value {
+		color: var(--primary-color);
+		font-weight: 500;
+	}
+}

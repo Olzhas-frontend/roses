@@ -1,0 +1,70 @@
+.account-settings {
+	&__title {
+		margin: 0;
+		margin-bottom: 1rem;
+
+		color: var(--bright-grey);
+		font-weight: 500;
+		font-size: 1.8rem;
+		line-height: 26px;
+	}
+
+	&__descr {
+		color: var(--davy-gray);
+		font-size: 1.4rem;
+		line-height: 20px;
+	}
+
+	&__group {
+		max-width: 400px;
+
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__label {
+		display: block;
+		margin-bottom: 0.5rem;
+
+		color: var(--bright-grey);
+		font-weight: 500;
+		font-size: 1.4rem;
+		line-height: 20px;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		padding: 1.3rem 2rem;
+
+		color: var(--primary-color);
+
+		line-height: 22px;
+
+		background-color: var(--color-white);
+		border: 1px solid #d0d2d7;
+		border-radius: 5px;
+	}
+
+	&__btn {
+		width: 100%;
+		padding: 1.3rem 0;
+
+		color: var(--color-white);
+		line-height: 22px;
+
+		background-color: var(--color-blue);
+		border: 1px solid transparent;
+		border-radius: 5px;
+
+		transition: 0.3s ease-in-out;
+
+		@include hover {
+			color: var(--color-blue);
+
+			background-color: var(--color-white);
+			border-color: var(--color-blue);
+		}
+	}
+}

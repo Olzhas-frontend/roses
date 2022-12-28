@@ -1,0 +1,143 @@
+.footer {
+	background-color: var(--white-smoke);
+
+	&__main {
+		padding-top: 4rem;
+		padding-bottom: 3rem;
+
+		border-bottom: 1px solid #e2e4eb;
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(12.5rem, 18.5rem));
+		justify-content: space-between;
+	}
+
+	&__menu {
+		&:not(:last-child) {
+			margin-bottom: 3rem;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 1rem;
+
+		color: var(--secondary-color);
+		font-weight: 700;
+		font-size: 1.8rem;
+		line-height: 26px;
+	}
+
+	&__list {
+		&-link {
+			color: var(--bright-grey);
+			line-height: 22px;
+
+			transition: color 0.3s ease-in-out;
+
+			@include hover {
+				color: var(--color-blue);
+			}
+		}
+	}
+
+	&__contact {
+		&-item {
+			color: var(--davy-gray);
+			font-size: 1.4rem;
+			line-height: 20px;
+
+			&:not(:last-child) {
+				margin-bottom: 1.5rem;
+			}
+		}
+
+		&-phone {
+			display: block;
+
+			color: var(--secondary-color);
+
+			font-weight: 700;
+			font-size: 1.8rem;
+			line-height: 26px;
+		}
+
+		&-email {
+			margin-top: 2rem;
+
+			color: var(--davy-gray);
+			font-size: 1.4rem;
+			line-height: 20px;
+
+			span {
+				display: block;
+
+				color: var(--secondary-color);
+				font-weight: 500;
+			}
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2.5rem 0;
+	}
+
+	&__copyright {
+		color: var(--davy-gray);
+		font-size: 1.4rem;
+		line-height: 20px;
+	}
+
+	&__cards {
+		display: flex;
+		align-items: center;
+
+		&-item {
+			display: flex;
+			align-items: center;
+
+			&:not(:last-child) {
+				margin-right: 1.5rem;
+			}
+		}
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+
+		color: var(--davy-gray);
+		font-size: 1.4rem;
+		line-height: 20px;
+	}
+
+	&__socail {
+		display: flex;
+		align-items: center;
+		margin-left: 2rem;
+
+		&-item {
+			&:not(:last-child) {
+				margin-right: 1.5rem;
+			}
+		}
+
+		&-icon {
+			width: 32px;
+			height: 32px;
+		}
+
+		&-link {
+			transition: opacity 0.3s ease-in-out;
+
+			@include hover {
+				opacity: 0.7;
+			}
+		}
+	}
+}

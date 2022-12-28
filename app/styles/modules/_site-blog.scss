@@ -1,0 +1,15 @@
+.blog {
+	padding: 1rem 0 8rem;
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(29rem, 37.7rem));
+		justify-content: space-between;
+		row-gap: 3rem;
+	}
+
+	&__btn-more {
+		grid-column: 1/-1;
+		margin-top: 3rem;
+	}
+}

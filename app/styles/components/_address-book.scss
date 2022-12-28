@@ -1,0 +1,79 @@
+.address-book {
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: 1.3rem 0;
+
+		color: var(--color-blue);
+		font-weight: 500;
+		line-height: 22px;
+
+		background: rgba(0, 147, 162, 0.1);
+		border-radius: 5px;
+
+		transition: 0.3s ease-in-out;
+
+		@include hover {
+			color: var(--color-white);
+
+			background: var(--color-blue);
+
+			svg {
+				fill: var(--color-white);
+			}
+		}
+
+		svg {
+			width: 24px;
+			height: 24px;
+			margin-right: 1.4rem;
+
+			transition: fill 0.3s ease-in-out;
+
+			fill: var(--color-blue);
+		}
+	}
+
+	&__item {
+		display: flex;
+		margin-bottom: 1rem;
+		padding: 2rem;
+
+		background: var(--color-white);
+		border: 1px solid #d0d2d7;
+		border-radius: 5px;
+
+		&:last-child {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__info {
+		margin-right: auto;
+		margin-left: 1rem;
+	}
+
+	&__name {
+		display: block;
+		margin-bottom: 0.8rem;
+
+		line-height: 22px;
+	}
+
+	&__edit-btn {
+		align-self: flex-start;
+
+		svg {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	&__entrance {
+		color: var(--steel-gray);
+		font-size: 1.4rem;
+		line-height: 20px;
+	}
+}

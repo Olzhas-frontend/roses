@@ -1,0 +1,86 @@
+.rose-shop {
+	position: relative;
+	z-index: 1;
+
+	padding: 12rem 0 7rem;
+
+	&__title {
+		margin: 0;
+		margin-bottom: 2rem;
+
+		color: var(--secondary-color);
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__info {
+		max-width: 875px;
+	}
+
+	&__text {
+		margin-bottom: 2rem;
+
+		color: var(--bright-grey);
+		font-size: 1.8rem;
+		line-height: 26px;
+	}
+
+	&__list {
+		padding-left: 1rem;
+
+		&-item {
+			position: relative;
+
+			padding-left: 2rem;
+
+			color: var(--bright-grey);
+			font-size: 1.8rem;
+			line-height: 26px;
+
+			&:not(:last-child) {
+				margin-bottom: 1.5rem;
+			}
+
+			&::before {
+				position: absolute;
+				top: 10px;
+				left: 0;
+
+				width: 4px;
+				height: 4px;
+
+				background-color: var(--bright-grey);
+				border-radius: 50%;
+
+				content: '';
+			}
+		}
+	}
+
+	&__img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 178px;
+		height: 178px;
+
+		background-color: #fff;
+		border: 1px solid var(--white-smoke);
+		border-radius: 50%;
+		box-shadow: 0 15px 30px rgba(34, 42, 70, 0.05);
+	}
+
+	&__decor {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+}
